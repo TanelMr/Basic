@@ -19,8 +19,6 @@ public class Ex39 {
             printStars(sideSize);
             count++;
         }
-
-        System.out.println();
     }
 
     public static void printRectangle(int width, int height) {
@@ -31,8 +29,18 @@ public class Ex39 {
             printStars(width);
             count++;
         }
+    }
 
-        System.out.println();
+    public static void printTriangle(int size) {
+
+        int count = 0;
+        int repetition = -1;
+
+        while (repetition < size) {
+            printStars(count);
+            count++;
+            repetition++;
+        }
     }
 
     public static void main(String[] args) {
@@ -47,5 +55,9 @@ public class Ex39 {
         System.out.println();
 
         printRectangle(5 , 3);
+
+        System.out.println();
+
+        printTriangle(5);
     }
 }
