@@ -8,6 +8,10 @@ public class Ex79 {
         System.out.println("Insert number: ");
 
         NumberStatistics stats = new NumberStatistics();
+        NumberStatistics all = new NumberStatistics();
+        NumberStatistics even = new NumberStatistics();
+        NumberStatistics odd = new NumberStatistics();
+
 
         while (true ) {
             int number = Integer.parseInt(reader.nextLine());
@@ -15,10 +19,18 @@ public class Ex79 {
                 break;
             }
             stats.addNumber(number);
+            all.addNumber(number);
+            if(number % 2 == 0){
+                even.addNumber(number);
+            } else {
+                odd.addNumber(number);
+            }
         }
 
             System.out.println("Amount: " + stats.amountOfNumbers());
             System.out.println("sum: " + stats.sum());
             System.out.println("average: " + stats.average());
+            System.out.println("sum of even: " + even.sum());
+            System.out.println("sum of odd: " + odd.sum());
     }
 }
