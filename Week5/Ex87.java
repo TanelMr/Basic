@@ -10,5 +10,9 @@ public class Ex87 {
 
         System.out.println( studioManhattan.larger(twoRoomsBrooklyn) );
         System.out.println( fourAndKitchenBronx.larger(twoRoomsBrooklyn) );
+
+
+        System.out.println( studioManhattan.priceDifference(twoRoomsBrooklyn) );
+        System.out.println( fourAndKitchenBronx.priceDifference(twoRoomsBrooklyn) );
     }
 }

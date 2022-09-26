@@ -16,5 +16,10 @@ package Week5;
             return this.squareMeters > otherApartment.squareMeters;
         }
 
+        public int priceDifference(Apartment otherApartment){
+            return this.squareMeters*this.pricePerSquareMeter - otherApartment.squareMeters*otherApartment.pricePerSquareMeter;
+        }
+
+
     }
 
