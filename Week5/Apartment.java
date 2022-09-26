@@ -20,6 +20,10 @@ package Week5;
             return this.squareMeters*this.pricePerSquareMeter - otherApartment.squareMeters*otherApartment.pricePerSquareMeter;
         }
 
+        public boolean moreExpensiveThan(Apartment otherApartment){
+            return this.squareMeters*this.pricePerSquareMeter > otherApartment.squareMeters*otherApartment.pricePerSquareMeter;
+        }
+
 
     }
 
