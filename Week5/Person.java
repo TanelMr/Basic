@@ -12,12 +12,7 @@ public class Person {
     }
 
     public int age() {
-//         calculate the age based on the birthday and the current day
-//         you get the current day as follows:
-//         Calendar.getInstance().get(Calendar.DATE);
-//         Calendar.getInstance().get(Calendar.MONTH) + 1; // January is 0 so we add one
-//         Calendar.getInstance().get(Calendar.YEAR);
-        int currentYear = Calendar.getInstance().get(Calendar.DATE);
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         int givenYear = birthday.setYear() ;
         return currentYear-givenYear;
     }
