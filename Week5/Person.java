@@ -24,4 +24,11 @@ public class Person {
     public String toString() {
         return this.name +", born "+ this.birthday;
     }
+
+    public boolean olderThan(Person compared) {
+
+       return this.birthday.setYear()>compared.birthday.setYear();
+
+    }
+
 }

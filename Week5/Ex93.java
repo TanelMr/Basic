@@ -10,5 +10,8 @@ public class Ex93 {
         System.out.println( thomas.getName() + " age " + thomas.age() + " years");
         System.out.println( pekka.getName() + " age " + pekka.age() + " years");
         System.out.println( tanel.getName() + " age " + tanel.age() + " years");
+
+        System.out.println( thomas.getName() + " is older than " +  pekka.getName() + ": "+ thomas.olderThan(pekka) );
+        System.out.println( pekka.getName() + " is older than " +  thomas.getName() + ": "+ pekka.olderThan(thomas) );
     }
 }
