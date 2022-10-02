@@ -20,6 +20,10 @@ public class GuessingGame {
         return Objects.equals(input, "y");
     }
 
+    public int average(int firstNumber, int secondNumber){
+        return (firstNumber + secondNumber)/2;
+    }
+
     public void instructions(int lowerLimit, int upperLimit) {
         int maxQuestions = howManyTimesHalvable(upperLimit - lowerLimit);
 
